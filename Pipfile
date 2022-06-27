@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-dotenv = "*"
+djangorestframework = "*"
+geopandas = "*"
+psycopg2 = "*"
+djangorestframework-xml = "*"
+gpxpy = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"
