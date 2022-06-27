@@ -7,6 +7,7 @@ from config.parser import GpxParser
 from gpxes.apis.serializers import LineSerializer
 import gpxes.models as gpx_models
 from django.contrib.gis.db import models as geom_models
+import gpxpy
 
 
 class UploadGPX(APIView):
@@ -17,6 +18,8 @@ class UploadGPX(APIView):
 
     def post(self, request):
         print(request.data)
+
+        # print(gpxpy.mod_gpx.GPX(request.data).)
         # line_serialized = LineSerializer(data={"geom": request.data})
         # if line_serialized.is_valid():
         #     # line_serialized.save()
