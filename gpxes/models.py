@@ -10,6 +10,8 @@ class Point(models.Model):
         null=False, srid=4326
     )
 
+    time = models.DateTimeField(null=False)
+
 
 class Line(models.Model):
 
